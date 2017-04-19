@@ -1,8 +1,9 @@
 body{
-    font: 15px/1.5 Arial, Helvetica, sans-serif;
+    /*font: 20px/1.5 Arial, Helvetica, sans-serif; */
+
     padding: 0;
     margin: 0;
-    background-color: #000000;
+    background-color: #001426;
     color: #ffffff;
 }
 
@@ -13,10 +14,11 @@ body{
 }
 
 header{
-    background: #701313;
-    padding-top: 20px;
-    min-height: 70px;
-    border-bottom: #FFDF00 3px solid;
+    font-family: 'Pacifico', cursive;
+    background: #66727c;
+    padding-top: 5px;
+    min-height: 50px;
+    border-bottom: #FFFFFF 3px solid;
     color: #000000;
 }
 
@@ -40,6 +42,7 @@ header li{
 }
 
 header #branding{
+
     float: left;
 }
 
@@ -49,4 +52,9 @@ header #branding h1{
 
 header nav{
     float: right;
+}
+footer{
+    width: 80%;
+    margin: auto;
+    float: bottom;
 }
