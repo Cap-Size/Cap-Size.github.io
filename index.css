@@ -1,4 +1,4 @@
-body{
+body {
     display: flex;
     background-color: #ededed;
     margin: 0;
@@ -7,9 +7,15 @@ body{
     justify-content: center;
     align-items: center;
 }
-mark{
+mark {
     background-color: white;
     color: black;
+    padding: .4em;
+}
+p {
+    word-break: break-all;
+    text-align: center;
+    padding: 2em;
 }
 #cap-size {
     display: block;
