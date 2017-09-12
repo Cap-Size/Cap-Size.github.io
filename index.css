@@ -22,17 +22,24 @@ p {
     display: block;
 }
 #cap-size svg {
-    transition-duration: .2s;
-    background: transparent;
-    fill: #263238;
-    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    stroke: #37474f;
+    stroke-width: 2px;
+    stroke-dasharray: 1850;
+    stroke-dashoffset: 1850;
+    fill: transparent;
     max-height: 80vh;
     max-width: 80vw;
-    animation: pulse 1.5s ease-in infinite;    
+    animation: offset 5s ease-in-out forwards;
 }
 
-@keyframes pulse {
-    0% { fill: #37474f; transform: scale(1) }
-    50% { fill: #263238; transform: scale(.99) }
-    100% { fill: #37474f; transform: scale(1) }
-  } 
+@keyframes offset {
+    90% {
+        fill: transparent;
+    }
+    100% {
+        stroke-dashoffset: 0;
+        fill: #37474f;
+    }    
+}
