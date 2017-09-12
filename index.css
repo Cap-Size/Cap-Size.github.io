@@ -1,12 +1,27 @@
-body{
+body {
+    display: flex;
     background-color: #ededed;
-    color: white;
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
 }
-mark{
+mark {
     background-color: white;
     color: black;
+    padding: .4em;
+    line-height: 2;
+}
+p {
+    word-break: break-all;
+    text-align: center;
+    padding: 2em;
+}
+#cap-size {
+    display: block;
+}
+#cap-size img {
+    max-height: 80vh;
+    max-width: 80vw;
 }
