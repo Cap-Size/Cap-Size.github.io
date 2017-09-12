@@ -21,7 +21,18 @@ p {
 #cap-size {
     display: block;
 }
-#cap-size img {
+#cap-size svg {
+    transition-duration: .2s;
+    background: transparent;
+    fill: #263238;
+    width: 100%;
     max-height: 80vh;
     max-width: 80vw;
+    animation: pulse 1.5s ease-in infinite;    
 }
+
+@keyframes pulse {
+    0% { fill: #37474f; transform: scale(1) }
+    50% { fill: #263238; transform: scale(.99) }
+    100% { fill: #37474f; transform: scale(1) }
+  } 
