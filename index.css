@@ -21,7 +21,25 @@ p {
 #cap-size {
     display: block;
 }
-#cap-size img {
+#cap-size svg {
+    box-sizing: border-box;
+    padding: 10px;
+    stroke: #37474f;
+    stroke-width: 2px;
+    stroke-dasharray: 1850;
+    stroke-dashoffset: 1850;
+    fill: transparent;
     max-height: 80vh;
     max-width: 80vw;
+    animation: offset 5s ease-in-out forwards;
+}
+
+@keyframes offset {
+    90% {
+        fill: transparent;
+    }
+    100% {
+        stroke-dashoffset: 0;
+        fill: #37474f;
+    }    
 }
